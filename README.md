@@ -29,6 +29,10 @@ http://blog.revolunet.com/angular-carousel/
 
 9. Facebook, twitter Like features implemented using AddThis code.
 
+10. Responsive Google maps API for location/ directions.
+
+11. Bitcoin payment button integration with Coinbase API.
+
 Enjoy and feel free to fork this repo/ add/ improve it. Send me a note with your enhancements.
 
 ToDo:
