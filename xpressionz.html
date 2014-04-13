@@ -3,35 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <title>Xpressionz Studios</title>
-
         <meta name='viewport' content='width=device-width,initial-scale=1.0,user-scalable=no'>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
+	   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	   <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href='css/angular-carousel.css' rel='stylesheet' type='text/css'>
         <link href='css/demo.css' rel='stylesheet' type='text/css'>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
-    <script src="js/angular-carousel.js"></script>
-    <script src="js/rn-carousel-auto-slide.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
-    <script src="js/testscript.js"></script>
-    <link href='fullcalendar-1.6.4/fullcalendar/fullcalendar.css' rel='stylesheet' />
-    <!--link href='bootstrap-fullcalendar.css' rel='stylesheet' /-->
-    <!--link href='fullcalendar-1.6.4/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' /-->
-    <script src='fullcalendar-1.6.4/lib/jquery.min.js'></script>
-    <script src='fullcalendar-1.6.4/lib/jquery-ui.custom.min.js'></script>
-    <script src='fullcalendar-1.6.4/fullcalendar/fullcalendar.min.js'></script>
-    <link href='css/fullcalendar.css'  rel='stylesheet'  type='text/css' />
-    <script src ="http://code.angularjs.org/1.2.9/angular-touch.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
+        <script src="js/angular-carousel.js"></script>
+        <script src="js/rn-carousel-auto-slide.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+        <script src="js/testscript.js"></script>
+        <link href='fullcalendar-1.6.4/fullcalendar/fullcalendar.css' rel='stylesheet' />
+    
+        <script src='fullcalendar-1.6.4/lib/jquery.min.js'></script>
+        <script src='fullcalendar-1.6.4/lib/jquery-ui.custom.min.js'></script>
+        <script src='fullcalendar-1.6.4/fullcalendar/fullcalendar.min.js'></script>
+        <link href='css/fullcalendar.css'  rel='stylesheet'  type='text/css' />
+        <script src ="http://code.angularjs.org/1.2.9/angular-touch.js"></script>
     </head>
+
     <body ng-controller="DemoCtrl">
 
         <header>
 	    
-
             <nav class="navbar navbar-default" style="background:transparent">
             <div class="container ngSnap enable_touchmove"  ng-controller="DemoCtrl" >
                 <div class="navbar-header">
@@ -43,65 +41,36 @@
 
                     <li ng-click="goTo('/eventsCalendar')"><a href="#eventsCalendar"><i class="fa fa-calendar"></i> Events Calendar</a></li>
 
-
                     <li ><a href="http://xpressionz.tk:3005"><i class="fa fa-edit"></i> Blog</a></li>
-                    <!--li><a href="#signUp"><i class="fa fa-inbox"></i> Sign Up</a></li-->
+                    
                     <li ng-href='/contact' ng-click="goTo('/contact')"><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
-                    <!--li><a href="#specialEvents"><i class="fa fa-comment"></i> Special Events</a></li-->
+                    
                 </ul>
             </div>
             </nav>
-		<script type="text/Javascript">
-			document.ontouchmove=function(event) {
-			var sourceElement=event.target || event.srcElement;
-console.log("ontouchmove fired");
-			if(!angular.element(sourceElement).hasClass('enable_touchmove')) {
-			e.preventDefault();
-		     }
-	};
-</script>
-
         </header>
 
-<a 	href="https://github.com/eshnil2000/Mobile-Angular-Node-Jade-Carousel"><img style="position:absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+        <a 	href="https://github.com/eshnil2000/Mobile-Angular-Node-Jade-Carousel"><img style="position:absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
    
         <!-- MAIN CONTENT AND INJECTED VIEWS -->
-	<!--div ng-controller="test">	
-	<button ng-click="add('/contact')">test</button>
-	</div-->
-        <div id="main">
-            
-            <!--{{ message }} this would directly bring in $scope.message variable from the controller script-- >
-            <!-- angular templating -->
-            <!-- this is where content will be injected -->
-        
 
-        <div >
-             <div class="ng-view" ></div>
-        </div>
+        <div id="main">
+
+            <div >
+                 <div class="ng-view" ></div>
+            </div>
         </div>
         
         
         <br><br>
 
-
-        </script-->
-	<script type="text/Javascript">
-		function test($scope,$location){
-			$scope.add=function(hash){
-			$location.path(hash);				
-				alert("hi");
-			}
-		}
-	</script>
         <!-- AddThis Smart Layers END -->
-<div class ="addthis_toolbox addthis_default_style ">
-<a class ="addthis_button_facebook_like" fb:like:layout="button_count"> </a>
-<a class ="addthis_button_tweet"></a>
-<script type="text/javascript">var addthis_config={"data_tracker_addressbar":true};</script>
+        <div class ="addthis_toolbox addthis_default_style ">
+        <a class ="addthis_button_facebook_like" fb:like:layout="button_count"> </a>
+        <a class ="addthis_button_tweet"></a>
+        <script type="text/javascript">var addthis_config={"data_tracker_addressbar":true};</script>
 
     </body>
-   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5205894e1544c811"></script>
-
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5205894e1544c811"></script>
 
 </html>
