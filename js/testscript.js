@@ -106,6 +106,11 @@
             .when('/eventsCalendar', {
                 templateUrl : 'pages/eventsCalendar.html',
                 controller  : 'eventsController'
+            })
+
+            .when('/directions', {
+                templateUrl : 'pages/directions.html',
+                controller  : 'eventsController'
             });
     });
 
