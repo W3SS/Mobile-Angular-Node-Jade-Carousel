@@ -1,5 +1,5 @@
 Mobile-Angular-Node-Jade-Carousel
-Developer: Nilesh Shah.
+Nilesh Shah.
 =================================
 
 A touch optiized, mobile first site using Responsive design, Angular MVC routing &amp; picture Carousel, a FullCalendar, Node/Express-Jade serving/adding Blog from remote mongodb
@@ -28,6 +28,10 @@ http://blog.revolunet.com/angular-carousel/
 8. The main page uses the presentation framework reveal.js to create a 3D effect for the pictures. This runs pretty slow on mobile devices, so add javascript code to route users away from this page if mobile device is detected. The site xpressionz.tk implements this capability.
 
 9. Facebook, twitter Like features implemented using AddThis code.
+
+10. Responsive Google maps API for location/ directions.
+
+11. Bitcoin payment button integration with Coinbase API.
 
 Enjoy and feel free to fork this repo/ add/ improve it. Send me a note with your enhancements.
 
