@@ -111,6 +111,11 @@
             .when('/directions', {
                 templateUrl : 'pages/directions.html',
                 controller  : 'eventsController'
+            })
+
+            .when('/tweets', {
+                templateUrl : 'pages/tweets.html',
+                controller  : 'eventsController'
             });
     });
 
@@ -168,10 +173,11 @@
 
         $('#calendar').fullCalendar({
             editable: true,
-            events:  eval($scope.evt)
+            events:  
+            //eval($scope.evt)
             
                 
-            /*    {
+                [{
                     title: 'Sansrity',
                     start: new Date(2014, 9, 15)
                 },
@@ -181,15 +187,50 @@
                 },
                 {
                     title: 'Summer WorkShop 1',
-                    start: new Date(2014, 5, 1),
-                    end: new Date(2014, 5, 14)
+                    start: new Date(2014, 5, 2),
+                    end: new Date(2014, 5, 6)
+                },
+                {
+                    title: 'Summer WorkShop 1',
+                    start: new Date(2014, 5, 9),
+                    end: new Date(2014, 5, 13)
                 },
                 {
                     title: 'Summer WorkShop 2',
-                    start: new Date(2014, 5, 15),
-                    end: new Date(2014, 5, 30)
+                    start: new Date(2014, 5, 16),
+                    end: new Date(2014, 5, 20)
                 },
-
+                {
+                    title: 'Summer WorkShop 2',
+                    start: new Date(2014, 5, 23),
+                    end: new Date(2014, 5, 27)
+                },
+                {
+                    title: 'Summer WorkShop 3',
+                    start: new Date(2014, 5, 30),
+                    end: new Date(2014, 6, 4)
+                },
+                {
+                    title: 'Summer WorkShop 3',
+                    start: new Date(2014, 6, 7),
+                    end: new Date(2014, 6, 11)
+                },
+                {
+                    title: 'Summer WorkShop 4',
+                    start: new Date(2014, 6, 14),
+                    end: new Date(2014, 6, 18)
+                },
+                {
+                    title: 'Summer WorkShop 4',
+                    start: new Date(2014, 6, 21),
+                    end: new Date(2014, 6, 25)
+                },
+                {
+                    title: 'Summer WorkShop 5',
+                    start: new Date(2014, 6, 28),
+                    end: new Date(2014, 7, 1)
+                },
+                
                 {
                     title: 'Summer Enrollment Period- Discounted Rate',
                     start: new Date(2014, 2, 25),
@@ -200,62 +241,12 @@
                     title: 'Summer Enrollment Period- Regular Rate',
                     start: new Date(2014, 3, 26),
                     end: new Date(2014, 4, 25)
-                },
-                
-               {
-                    title: 'All Day Event',
-                    start: new Date(2014, 0, 1)
-                },
-                {
-                    title: 'All Day Event',
-                    start: new Date(2014, 0, 1)
-                },
-
-
-
-                {
-                    title: 'Long Event',
-                    start: new Date(y, m, 2),
-                    end: new Date(y, m, 3)
-                },
-                {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: new Date(y, m, d-3, 16, 0),
-                    allDay: false
-                },
-                {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: new Date(y, m, d+4, 16, 0),
-                    allDay: false
-                },
-                {
-                    title: 'Meeting',
-                    start: new Date(y, m, d, 10, 30),
-                    allDay: false
-                },
-                {
-                    title: 'Lunch',
-                    start: new Date(y, m, d, 12, 0),
-                    end: new Date(y, m, d, 14, 0),
-                    allDay: false
-                },
-                {
-                    title: 'Birthday Party',
-                    start: new Date(y, m, d+1, 19, 0),
-                    end: new Date(y, m, d+1, 22, 30),
-                    allDay: false
-                },
-                {
-                    title: 'Click for Google',
-                    start: new Date(y, m, 28),
-                    end: new Date(y, m, 29),
-                    url: 'http://google.com/'
                 }
                 
+               
+                
 
-            ] */
+            ] 
                 });
         
             }, 250);
