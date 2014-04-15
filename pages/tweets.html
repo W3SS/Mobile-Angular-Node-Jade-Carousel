@@ -1,9 +1,31 @@
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc3/jquery.mobile-1.0rc3.min.css" />
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0rc3/jquery.mobile-1.0rc3.min.js"></script>
+        <script src="http://code.angularjs.org/angular-0.9.19.min.js" ng:autobind></script>
+        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script-->
+    <!--link rel="stylesheet" href="../../css/main.css">    
+    <script src="../../js/angular-1.0.0rc10.min.js"></script-->
+    <!--script type="text/javascript">
+        function twitter_controller($scope, $http) {
+            var twitter_api_url = "php/gettweets.php?callback=JSON_CALLBACK";
+                
+                
+            $http.jsonp( twitter_api_url ).success(
+                function(data, status, headers, config){
+                    $scope.tweets = data;
+                }
+            );
+        }
+        twitter_controller.$inject = ['$scope', '$http'];
+    </script-->
 
-<div>
-
-    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Xpressionz_" data-widget-id="455559814546853888">Tweets by @Xpressionz_</a>
-</div>
-
+    <div id="twitter-feed" ng-controller="twitter_controller">
+    		<h1 class="jumbotron text-center" >Tweets</h1>
+            <ul  data-role="listview">
+                <li ng-repeat="tweet in tweets">
+                    {{ tweet.created_at }} :  {{ tweet.text }}
+                </li>
+            </ul>    
+        </div>
 
 

@@ -11,7 +11,7 @@
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href='css/angular-carousel.css' rel='stylesheet' type='text/css'>
         <link href='css/demo.css' rel='stylesheet' type='text/css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"  ng:autobind></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
         <script src="js/angular-carousel.js"></script>
         <script src="js/rn-carousel-auto-slide.js"></script>
@@ -47,7 +47,7 @@
 
                     <li ng-href='/directions' ng-click="goTo('/directions')"><a href="#directions"><i class="fa fa-map-marker"></i> Location</a></li>
 
-                    <!--li ng-href='/tweets' ng-click="goTo('/tweets')"><a href="#tweets"><i class="fa fa-map-marker"></i> Tweets</a></li-->
+                    <li ng-href='/tweets' ng-click="goTo('/tweets')"><a href="#tweets"><i class="fa fa-map-marker"></i> Tweets</a></li>
                     
                 </ul>
             </div>
