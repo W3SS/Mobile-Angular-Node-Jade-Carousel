@@ -12,7 +12,7 @@
 		console.log("in goTo"+ hash);
 	    }
 	    $scope.goToURL=function(hash){
-		window.location.href= "http://54.245.107.178:3005";
+		window.location.href= "http://localhost:3005";
 		console.log("in goToURL"+ hash);
 	    }
 
@@ -47,7 +47,7 @@
                 target.push({
                     label: 'slide #' + (i + 1),
                     //img: 'http://lorempixel.com/450/300/' + style + '/' + (i % 10) ,
-                    //img: 'http://54.245.107.178/kid1.png',
+                    
                     img: 'img/'+ (i+1)+'.png',
                     
                     color: $scope.colors[ (i*10) % $scope.colors.length],
@@ -72,7 +72,7 @@
         var App = angular.module('App', ["ngRoute","DemoCtrl"]);
         
         App.controller('twitter_controller',function($scope, $http) {
-            var twitter_api_url = "/Xpressionz/php/gettweets.php?callback=JSON_CALLBACK";
+            var twitter_api_url = "/php/gettweets.php?callback=JSON_CALLBACK";
             function relative_time(time_value) {
       var values = time_value.split(" ");
       time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
@@ -120,7 +120,7 @@
         App.factory('shopFactory', function($http) {
               return {
                 getShopAsync: function(callback) {
-                    $http.jsonp('http://54.245.107.178:8080/events?callback=JSON_CALLBACK').success(callback)
+                    $http.jsonp('http://localhost:8080/events?callback=JSON_CALLBACK').success(callback)
                 }
             };
         });  
@@ -176,13 +176,13 @@
     });
 
         App.controller('aboutController', function($scope) {
-        $scope.message = 'Eshani is versed in Eshani is versed in Eshani is versed in Eshani is versed in Eshani is versed in Eshani is versed in Eshani is versed in Eshani is versed in Eshani is versed in ';
+        $scope.message = 'message';
         //console.log('in about');
     });
 
     App.controller('contactController', function($scope) {
-        $scope.message = 'email:eshanis_1@yahoo.com';
-        $scope.tel= 'Tel: +1 (916)-761-3118';
+        $scope.message = 'email:xxx@xxx.com';
+        $scope.tel= 'Tel: +1 (xxx)-xxx-xxx';
         //console.log('in contact');
         //$scope.hidePictures="true";
         //console.log("hidePictures is: "+ $scope.hidePictures);
