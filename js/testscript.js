@@ -72,7 +72,7 @@
         var App = angular.module('App', ["ngRoute","DemoCtrl"]);
         
         App.controller('twitter_controller',function($scope, $http) {
-            var twitter_api_url = "/Mobile-Angular-Node-Jade-Carousel/php/gettweets.php?callback=JSON_CALLBACK";
+            var twitter_api_url = "/Xpressionz/php/gettweets.php?callback=JSON_CALLBACK";
             function relative_time(time_value) {
       var values = time_value.split(" ");
       time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
@@ -169,7 +169,7 @@
     });
 
          App.controller('homeController', function($scope) {
-        $scope.message = 'We seek to develop and strengthen creative skills, build self-esteem, develop a sense of self-importance and individuality, encourage self-expression and stimulate imagination in children.We specialize in Drawing, Painting and Bollywood Dance classes for children 5+, in Folsom, CA. Bring your child over to attend a FREE session, or come by to observe a class in progress.';
+        $scope.message = 'Xpressionz offers the Folsom Summer of Art & Bollywood Dance Camp June/July 2014. We seek to develop and strengthen creative skills, build self-esteem, develop a sense of self-importance and individuality, encourage self-expression and stimulate imagination in children.We specialize in Drawing, Painting and Bollywood Dance classes for children 5+, in Folsom, CA. Bring your child over to attend a FREE session, or come by to observe a class in progress.';
         //console.log('in about');
 
         
@@ -190,7 +190,7 @@
 
     App.controller('eventsController', function($q,$scope,shopFactory) {
 
-        $scope.message = 'Come join the 2 and 4 week summer workshops starting in June.Both mornings & afternoon sessions will be available';
+        $scope.message = 'Summer camps Half Day ($90/week 9am-1pm) and Full Day($120/week 9am-4pm) available starting June through July. Before/After camp options available';
         $scope.event1=[];
         $scope.evt=[];
         

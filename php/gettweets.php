@@ -3,7 +3,8 @@ session_start();
 require_once("twitteroauth.php"); //Path to twitteroauth library
  
 //$twitteruser = "Xpressionz_";
-$twitteruser = "octaveyahoo";
+//$twitteruser = "octaveyahoo";
+$twitteruser= "Xpressionz_";
 
 $notweets = 30;
 $consumerkey = "yoG92RFgr934QngSCFD7ZpETs";
