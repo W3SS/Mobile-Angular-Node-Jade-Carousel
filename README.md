@@ -1,11 +1,11 @@
 Mobile-Angular-Node-Jade-Carousel
-Nilesh Shah.
+Nilesh Shah eshnil2000@gmail.com
 =================================
 
 A touch optiized, mobile first site using Responsive design, Angular MVC routing &amp; picture Carousel, a FullCalendar, Node/Express-Jade serving/adding Blog from remote mongodb
 
 See a demo of this site hosted on Amazon AWS@:
-http://xpressionz.tk. 
+http://54.245.107.178. 
 
 This site leverages several technologies:
 1. It uses Angular as an MVC framework for a Single Page App. The page is responsive: The navigation bar will adapt depending on the device type (laptop, mobile, etc).
@@ -31,11 +31,11 @@ http://blog.revolunet.com/angular-carousel/
 
 10. Responsive Google maps API for location/ directions.
 
-11. Bitcoin payment button integration with Coinbase API.
+11. Disabled--Bitcoin payment button integration with Coinbase API.
 
 Enjoy and feel free to fork this repo/ add/ improve it. Send me a note with your enhancements.
 
-ToDo:
+To Do:
 1. Comment code.
 
 2. Add detailed tutorial.
@@ -48,4 +48,5 @@ ToDo:
 
 6. Add registration capability.
 
-END
+---
+
