@@ -5,7 +5,7 @@ Nilesh Shah eshnil2000@gmail.com
 A touch optiized, mobile first site using Responsive design, Angular MVC routing &amp; picture Carousel, a FullCalendar, Node/Express-Jade serving/adding Blog from remote mongodb
 
 See a demo of this site hosted on Amazon AWS@:
-http://54.245.107.178. 
+http://codenovator.net. 
 
 This site leverages several technologies:
 1. It uses Angular as an MVC framework for a Single Page App. The page is responsive: The navigation bar will adapt depending on the device type (laptop, mobile, etc).
